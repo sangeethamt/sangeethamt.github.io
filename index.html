@@ -1,75 +1,194 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Sangeetha Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     </head>
     <body>
-        <header>
-           <nav>
-               <ul class="navigation-items">
-                  <li class="navigation-item"><a href="#aboutme">About Me</a></li>
-                  <li class="navigation-item"><a href="#skills">Skills</a></li>
-                  <li class="navigation-item"><a href="#projects">Projects</a></li>
-                  <li class="navigation-item"><a href="contact.html">Contact</a></li>
-                </ul>
-           </nav>  
-            <section class="header">
-                <h1>I'm Sangeetha,a Freelance Software Developer</h1>
-                <image src="Sangeetha image.jpg"></image>
-                
-                
-                
-                
-            </section>
-        </header>
-        <main>
-            <section class="about>">
-            <section class="aboutme">
-                <p>I am a Computer Science Engineering Graduate based in London,United Kingdom</p>
-                <P>I am very much interested in developing web apps.I have done many projects in this domain.</p>
-                <p>If you are looking for any freelancer to design your web application then contact me.</p>    
-            
-            </section>
-            <section class="skills">
-                <h2>Skills</h2>
-                <div id="skills-container">
-                  <i class="fa fa-html5"></i>
-                  <i class="fa fa-css3-alt"></i>
-                  <i class="fa fa-js"></i>
-                  <i class="fa fa-react"></i>
-                  <i class="fa fa-aws"></i>
-                  <i class="fa fa-git"></i>
-                  <i class="fa fa-node"></i>
-                  <i class="fa fa-github"></i>
-                </div>
-              </section>
-              <br>
-              <section class="contact">
-                <p>Want to know more?Drop me a line.</p>
-                <a href="mailto:sangeemt8@gmail.com">sangeemt8@gmail.com</a>
-                <p>Follow me on:</p>
-                <a href="https://www.linkedin.com/in/sangeethamt/"><i class="fa fa-linkedin" style="font-size:24px"></i>
-                </a>
-                <a href="https://github.com/sangeethamt"><i class="fa fa-github icon"></i></a>
-
-            </section>
-            </section>
-            <br>
-            <section class="projects">
-                  <h2>Projects</h2>   
-                  <button id="project1">Project1</button> 
-                  <button>Project2</button>
-                  <button>Project3</button>
-
-            </section>  
+    <!-- Add a button to toggle the sidebar on smaller 
+ screens -->
+       
+        <button id="sidebarToggle" class="sidebar-toggle">☰</button>
         
-            
+    
 
-        </main>
-        <script src="script.js"></script>
-    </body>
+       <div class="sidebar" id="sidebar">
+          <img src="Sangeetha image.jpg" alt="Sangeetha Photo" class="profile-photo">
+          <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+           </nav>
+    </div>
+    <div class="main-content">
+        <section id="about">
+            <h1>Hi, I'm <span style ="background-color:rgba(43, 121, 43, 0.868);">Sangeetha Manavalan.</span></h1>
+            <h2>A Freelance Software Developer</h2>
+            <p>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving complex and challenging real-world problems.</p>
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/sangeethamt" target="_blank" ><i class="fab fa-linkedin linkedin"></i></a>
+                <a href="https://github.com/sangeethamt" target="_blank"><i class="fab fa-github github" ></i></a>
+            </div>
+            <div class="buttons">
+                <button onclick="location.href='#about'">Read More</button>
+                <button onclick="location.href='#contact'">Contact Me</button>
+            </div>
+        </section>
+        <section id="detailed-about">
+                <h1>About</h1>
+            <p>I am a Computer Science Engineering Student. I enjoy problem-solving and coding. Always strive to bring 100% to the work I do. I have worked on technologies like HTML5, CSS, Javascript, Java, C++, Python, MySQL, PostgeSQL during my bachelor's. I am passionate about developing complex applications that solve real-world problems impacting millions of users.</p>
+            <p><strong>Languages:</strong> Java, C++, Python, HTML/CSS, JavaScript</p>
+            <p><strong>Databases:</strong> MySQL, PostgreSQL</p>
+            <p><strong>Libraries:</strong>React, Redux</p>
+            <p><strong>Tools & Technologies:</strong> Git, Node.js</p>
+            <p>Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.</p>
+        </section>
+        <section id="experience">
+            <h1>Experience</h1>
+            <div class="experience-item">
+            
+                <h2>London Borough Of Hounslow</h2>
+                <h3>Volunteer(Digital Champion)</h3>
+                <p> I offer step-by-step support for tech essentials, enhancing digital
+                    literacy in the community and empowering individuals to navigate the
+                    digital world confidently</p>
+                <p><strong>Oct 2024 - Current | London, UK</strong></p>
+            </div>
+            <div class="experience-item">
+                
+                <h2>Upwork</h2>
+                <h3>Freelancer</h3>
+                <p>Completed AI Technical product review and shared the feedback.</p>
+                <p>Completed the e-commerce product purchase flow testing and
+                    shared the feedback.</p>
+                <p><strong>Sep 2024 - Current | Remote</strong></p>
+            </div>
+            <div class="experience-item">
+                
+                <h2>IT Career Switch</h2>
+                <h3>Student Trainee</h3>
+                <p>Developed and maintained web applications using Node.js, Express, and MongoDB.</p>
+                <p>Implemented responsive design principles to ensure compatibility across various devices and screen sizes.</p>
+                <p>Created RESTful APIs to facilitate seamless communication between the front end and back end.</p>
+                <p>Worked in an Agile environment, participating in sprint planning and daily stand-ups.</p>
+                <p>Learning HTML5, CSS3, and JavaScript to create responsive, user friendly web interfaces.</p>
+                <p>Utilizing React to build dynamic, single-page applications with a focus on performance and scalability.</p>
+                <p>Implementing responsive design principles to ensure compatibility across various devices and screen sizes.</p>
+                <p>Developing server-side applications using Node.js and Express, focusing on efficient and scalable code.</p>
+                <p>Designing and managing databases using MySQL, ensuring data integrity and security.</p>
+                <p>Creating RESTful APIs to facilitate seamless communication between the front end and back end.</p>
+                <p>Developing a comprehensive task management application integrating front-end and back-end technologies using Agile methodology[Kanban].</p>
+                <p>Building a personal portfolio website showcasing projects and technical skills.</p>
+                <p>Collaborating with peers on group projects, utilizing Git for version control and project management.</p>
+                <p><strong>Aug 2023 - Current | London, UK</strong></p>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+            <h2>Projects</h2>
+            <div class="project-item">
+            
+                <h2>Jammming</h2>
+                <p>Jamming is a React app for creating new playlists with Spotify.
+                </p>
+                <p><strong>Tools:</strong>React, Javascript, HTML, CSS</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/sangeethamt/jammming" target="_blank">View Project</a></p>
+            </div>
+            <div class="project-item">
+                <!--<img src="https://www.missionmagnets.com.au/wp-content/uploads/2021/04/appointment-01.jpg" alt="Project 2" class="project-image">-->
+                <h2>AppointmentPlanner</h2>
+                <p> An app that manages contacts and appointments. The app consists of two pages: one to view and add contacts, and one to view and add appointments.
+
+                This app was implemented from the topmost component down. Both stateful and stateless functional components were created using hooks.</p>
+                <p><strong>Tools:</strong> React, HTML,CSS,Javascript</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/sangeethamt/AppointmentPlanner" target="_blank">View Project</a></p>
+            </div>
+            <div class="project-item">
+                <!--<img src="https://i.pinimg.com/736x/18/6d/d3/186dd3ebd0a293bbdf8366172a5e4b78.jpg" alt="Project 3" class="project-image">-->
+                <h2>Message Generator</h2>
+                <p>A random message is generated each time the program is run. Message shows the instructions to create a dish using properties
+
+                    Dish-type
+                    Cereals
+                    vegetables
+                    Based on random instructions, create unique dishes.</p>
+                <p><strong>Tools:</strong> Javascript</p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/sangeethamt/message_generator" target="_blank">View Project</a></p>
+            </div>
+            
+            </div>
+        </section>
+        
+        <section id="skills">
+    <h1>Skills</h1>
+    <div class="skills-category">
+        <h2>Languages and Databases</h2>
+        <div class="skills-icons">
+            <i class="fab fa-python"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fas fa-database"></i>
+            <i class="fas fa-database"></i>
+            
+        </div>
+    </div>
+    <div class="skills-category">
+        <h2>Libraries</h2>
+        <div class="skills-icons">
+            
+            <i class="fa-brands fa-react"></i>
+            
+        </div>
+    </div>
+    <div class="skills-category">
+        <h2>Frameworks</h2>
+        <div class="skills-icons">
+            
+            <i class="fab fa-node-js"></i>
+        
+        </div>
+    </div>
+    <div class="skills-category">
+        <h2>Tools & Technologies</h2>
+        <div class="skills-icons">
+            <i class="fab fa-git"></i>
+            <i class="fa-brands fa-github"></i>
+
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <h1>Education</h1>
+    <div class="education-item">
+        <h2>T.J.S Engineering College(Anna University),Tamil nadu,India</h2>
+        <p><strong>Bachelor of Engineering in Computer Science</strong></p>
+        <p>Aug 2011 - May 2015</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h1>Contact</h1>
+    <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/yourlinkedinid" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/yourgithubid" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.upwork.com/freelancers/~01bfbfa8afa86bdc31" target="_blank"><i class="fa-brands fa-upwork"></i></a>
+        <a href="https://www.credly.com/users/sangeetham" target="_blank"><i class="fas fa-certificate"></i></a>
+        <a href="mailto:sangeemt8@example.com"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+1234567890"><i class="fas fa-phone"></i></a>
+    </div>
+</section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
 </html>
