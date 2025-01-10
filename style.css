@@ -47,7 +47,7 @@ body {
 
 .main-content {
  margin-left: 100px;
-  padding-left:4rem;
+  padding-left:8.2rem;
   width: calc(100% - 100px);
   
   
@@ -189,6 +189,21 @@ body {
 
 .education-item p {
   margin: 0.2rem 0;
+}
+
+.contact-bottom-icons {
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+  margin: 1rem 0;
+  
+}
+
+.contact-bottom-icons a {
+  opacity:0.8;
+  font-size: 4rem;
+  text-decoration: none;
+  
 }
 
 /* Styles for the sidebar toggle button */
